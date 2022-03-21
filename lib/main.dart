@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fake-shop/widgets/image_slider_top.dart';
+import 'package:fake-shop/widgets/list_products.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +28,24 @@ class MyApp extends StatelessWidget {
       body: Column(
        children: const [
         ImageListPage(),
+        Padding(
+         padding: const EdgeInsets.all(16),
+         child: Row(
+           children: const [
+            Expanded(
+              child: Text(
+              "Produk saat ini",
+               style: TextStyle(
+                  fontFamily: "avenir",
+                  fontSize: 25,
+                  fontWeight: FontWeight.w900,
+            ),
+           ),
+          ),
+         ],
+        ),
+       ),
+       ListProducts(),
       ],
      ),
     ),
