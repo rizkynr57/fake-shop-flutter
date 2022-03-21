@@ -1,4 +1,4 @@
-import 'package:data_api/services/http_service.dart'
+import 'package:data_api/services/http_service.dart';
 import 'package:get/get.dart';
 
 class productController extends GetxController {
