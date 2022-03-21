@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fake-shop/widgets/image_slider_top.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +11,24 @@ class MyApp extends StatelessWidget {
    @override
    Widget build(BuildContext context) {
     return MaterialApp(
+     debugShowCheckedModeBanner: false,
      home: Scaffold(
       appBar: AppBar(
+       elevation: 0,
        title: Text("Fake Shop"),
        backgroundColor: Colors.indigo,
+       actions: [
+        IconButton(
+         onPressed; () {},
+          icon: const Icon(Icons.shopping_cart),
+       ),
+      ],
      ),
-      body: Container(),
+      body: Column(
+       children: const [
+        ImageListPage(),
+      ],
+     ),
     ),
    );
   }
